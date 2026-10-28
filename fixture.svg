@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fixture app icon. 1024×1024. White database cylinder on a purple squircle. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="0.45" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#3b1080" flood-opacity="0.40"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="228" ry="228" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="228" ry="228" fill="url(#sheen)"/>
+
+  <g filter="url(#sh)">
+    <!-- cylinder body + top disk -->
+    <path d="M327,360 V664 A185,66 0 0 0 697,664 V360" fill="#ffffff"/>
+    <ellipse cx="512" cy="360" rx="185" ry="66" fill="#ffffff"/>
+    <!-- band curves (purple) suggesting stacked records -->
+    <path d="M327,462 A185,66 0 0 0 697,462" fill="none" stroke="#7c3aed" stroke-width="16" stroke-linecap="round"/>
+    <path d="M327,563 A185,66 0 0 0 697,563" fill="none" stroke="#7c3aed" stroke-width="16" stroke-linecap="round"/>
+  </g>
+</svg>
